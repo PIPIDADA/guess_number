@@ -1,10 +1,14 @@
 import random
 
-x = random.randint(1, 100)
+start = input('請輸入開始值：')
+end = input('請輸入結束值：')
+start = int(start)
+end =int(end)
+x = random.randint(start, end)
 k = 0
 
 while True:
-	y = input('請於1~100中選擇一個數：')
+	y = input('請於',start,'及',end,'中猜一個數：')
 	y = int(y)
 	k = k + 1
 	if x > y:
